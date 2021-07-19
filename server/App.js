@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 
 const app = express();
-mongoose.connect('mongodb+srv://riddhivaishnav1130:Shdr3010@graphql.8nmvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://riddhivaishnav1130:Shdr3010>@graphql.8nmvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
 {useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
