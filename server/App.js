@@ -2,10 +2,17 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql').graphqlHTTP;
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
+const cors = require('cors');
+
+
 
 
 const app = express();
-mongoose.connect('mongodb+srv://riddhivaishnav1130:Shdr3010>@graphql.8nmvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+
+//allow cross-orgin requests
+app.use(cors());
+
+mongoose.connect('mongodb+srv://riddhivaishnav1130:Shdr3010@graphql.8nmvz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
 {useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
